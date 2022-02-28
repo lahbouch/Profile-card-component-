@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --body-font: 18px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--Dark-cyan);
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  min-width: 400px;
+  z-index: 6;
+  margin: 0 auto;
+}
+.top-section {
+  background-image: url(./images/bg-pattern-card.svg);
+  height: 130px;
+  position: relative;
+}
+
+.top-section div {
+  display: flex;
+  justify-content: center;
+}
+
+.top-section img {
+  position: absolute;
+  top: 75px;
+  border-radius: 50%;
+  border: 6px solid white;
+}
+
+.bottom-section {
+  margin-top: 65px;
+  text-align: center;
+}
+
+.bottom-section h1,
+.bottom-section h1 span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.bottom-section h1 span {
+  font-weight: 400;
+  margin-left: 5px;
+}
+.bottom-section p {
+  margin-top: 10px;
+  font-weight: 400;
+  color: var(--Dark-grayish-blue);
+  font-size: 1rem;
+}
+.stats {
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border-top: 2px solid hsl(227, 10%, 46%, 30%);
+  border-width: thin;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stats div strong {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--Very-dark-desaturated-blue);
+  margin-bottom: 7px;
+}
+
+.stats div span {
+  font-weight: 400;
+  color: var(--Dark-grayish-blue);
+  font-size: 0.9rem;
+}
+
+.top img {
+  height: 100vh;
+  position: absolute;
+  top: -150px;
+  left: -150px;
+  width: 450px;
+  height: auto;
+  transform: rotate(90deg);
+  opacity: 0.3;
+  z-index: 5;
+}
+
+.bottom img {
+  height: 100vh;
+  position: absolute;
+  width: 450px;
+  height: auto;
+  transform: rotate(90deg);
+  opacity: 1;
+  z-index: 5;
+  right: 0;
+  bottom: 0;
+}
