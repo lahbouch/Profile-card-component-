@@ -16,10 +16,11 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   background-color: var(--Dark-cyan);
   display: flex;
-  height: 100vh;
+  height: 100vmin;
   flex-direction: column;
   justify-content: center;
   margin: 0 20px;
+  overflow: hidden;
 }
 
 .container {
@@ -97,9 +98,9 @@ body {
 .top img {
   height: 100vh;
   position: absolute;
-  top: -150px;
-  left: -150px;
-  width: 450px;
+  top: -450px;
+  left: -250px;
+  width: 800px;
   height: auto;
   transform: rotate(90deg);
   opacity: 0.3;
@@ -109,11 +110,11 @@ body {
 .bottom img {
   height: 100vh;
   position: absolute;
-  width: 450px;
+  width: 600px;
   height: auto;
   transform: rotate(90deg);
   opacity: 1;
   z-index: 5;
   right: 0;
-  bottom: 0;
+  bottom: -250px;
 }
